@@ -6,7 +6,7 @@ state={
 }
 
 handleChange=(e)=>{
-    // console.log(e.target.value)
+ 
     this.setState({
     desc : e.target.value
 }
@@ -14,7 +14,6 @@ handleChange=(e)=>{
 }
 onSubmit=(e)=>{
     e.preventDefault()
-    // console.log(this.state)
     this.props.addItem(this.state)
     this.setState({
         desc:""

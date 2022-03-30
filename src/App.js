@@ -5,8 +5,8 @@ import AddItem from './components/Additem/Additem';
 class App extends React.Component {
   state = {
     items: [
-      { id: 1, desc: 'Hello1', Done: false },
-      { id: 15, desc: 'Hello3', Done: false },
+      { id: 1, desc: 'Reading Books', Done: false },
+      { id: 15, desc: 'Writing HomeWork', Done: false },
     ],
   };
 
