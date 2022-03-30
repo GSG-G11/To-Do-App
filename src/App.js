@@ -17,13 +17,20 @@ class App extends React.Component {
     this.setState({ items });
   };
 
+  addItem=(item)=>{
+    let items=this.state.items
+    items.push(item)
+    this.setState({ items })
+
+  }
+
   render() {
     const { items } = this.state;
     return (
       <div className="App">
-        Hello
+        <Additem addItem={this.addItem} />
         <Listitem items={items} deleteItem={this.deleteItemHandle} />
-        <Additem />
+        
       </div>
     );
   }

@@ -1,5 +1,5 @@
 import React from "react";
-
+import './Additem.css'
 class Additem extends React.Component{
 state={
     desc:""
@@ -14,14 +14,16 @@ handleChange=(e)=>{
 }
 onSubmit=(e)=>{
     e.preventDefault()
-    console.log(this.state)
+    // console.log(this.state)
+    this.props.addItem(this.state)
 }
 
 
     render(){
         return(
-            <div>
+            <div className="AddItemForm">
                 <form onSubmit={this.onSubmit} >
+                    <h1>To Do App</h1>
                     <input type="text" id="desc" placeholder="Enter the task" onChange={this.handleChange} />
                     <input type="submit" value="Add" />
                 </form>
