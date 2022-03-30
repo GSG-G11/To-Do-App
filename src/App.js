@@ -1,6 +1,7 @@
 import React from 'react';
 import Listitem from './components/ListItems/ListItems';
 import './App.css';
+import Additem  from './components/Additem/Additem';
 class App extends React.Component {
   state = {
     items: [
@@ -17,6 +18,8 @@ class App extends React.Component {
       <div className="App">
         Hello
         <Listitem items={items} />
+        <Additem />
+
       </div>
     );
   }
