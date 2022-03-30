@@ -1,25 +1,30 @@
-li{
+ul{
+  list-style: none;
+}
+li {
   margin-top: 15px;
-  background-color:rgb(133, 183, 228) ;
+  background-color: rgb(133, 183, 228);
   width: 30%;
   border-radius: 5px;
   padding: 10px;
   margin-left: 35%;
   position: relative;
-  
+}
+li input {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+}
+li input:focus{
+  outline: none;
 }
 
 li span {
- 
-margin-left: 20px;
+  margin-left: 20px;
 }
 
-
-
-
-
-
-p{
+p {
   display: flex;
   justify-content: center;
   margin-top: 50px;
@@ -27,7 +32,38 @@ p{
   font-size: xx-large;
 }
 
-.icons{
-    position: absolute;
-    right: 10px;
+.icons {
+  position: absolute;
+  right: 10px;
 }
+
+@media screen and (max-width: 600px) {
+  li {
+    width: 100%;
+    margin-left: 0;
+  }
+  p {
+    font-size: x-large;
+  }
+}
+  
+@media screen and (max-width: 400px) {
+  li {
+    width: 100%;
+    margin-left: 0;
+  }
+  p {
+    font-size: large;
+  }
+}
+  
+@media screen and (max-width: 300px) {
+  li {
+    width: 100%;
+    margin-left: 0;
+  }
+  p {
+    font-size: medium;
+  }
+}
+
