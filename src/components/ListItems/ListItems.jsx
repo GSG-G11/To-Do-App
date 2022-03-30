@@ -7,14 +7,16 @@ const Listitem = (props) => {
       return (
         <li key={item.id}>
           <span>{item.desc}</span>
-          <span>
+          {/* <span>
             <i className="fa-solid fa-highlighter"></i>
-          </span>
+          </span> */}
+          <span className='icons'>
           <span onClick={() => deleteItem(item.id)}>
-            <i className="fa-solid fa-circle-xmark"></i>
+            <i className="fa-solid fa-trash-can"></i>
           </span>
           <span>
             <i className="fa-solid fa-pen-to-square"></i>
+          </span>
           </span>
         </li>
       );
