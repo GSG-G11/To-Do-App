@@ -1,3 +1,33 @@
+li{
+  /* border: 1px solid black; */
+  margin-top: 15px;
+  background-color:rgb(133, 183, 228) ;
+  width: 30%;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 35%;
+  
+}
+
 li span {
-  font-size: 50px;
+  /* font-size: 50px; */
+  /* border: 1px solid red; */
+margin-left: 20px;
+}
+
+
+
+
+
+
+p{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.icons{
+    margin-left: 30%;
 }

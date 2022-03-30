@@ -16,6 +16,9 @@ onSubmit=(e)=>{
     e.preventDefault()
     // console.log(this.state)
     this.props.addItem(this.state)
+    this.setState({
+        desc:""
+    })
 }
 
 
@@ -24,8 +27,8 @@ onSubmit=(e)=>{
             <div className="AddItemForm">
                 <form onSubmit={this.onSubmit} >
                     <h1>To Do App</h1>
-                    <input type="text" id="desc" placeholder="Enter the task" onChange={this.handleChange} />
-                    <input type="submit" value="Add" />
+                    <input type="text" id="desc" placeholder="Add task" onChange={this.handleChange} value={this.state.desc}/>
+                    <input type="submit" value="Add" className="Add" />
                 </form>
             </div>
         )
