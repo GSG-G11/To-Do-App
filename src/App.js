@@ -18,6 +18,7 @@ class App extends React.Component {
   };
 
   addItem=(item)=>{
+    item.id=Math.random
     let items=this.state.items
     items.push(item)
     this.setState({ items })
