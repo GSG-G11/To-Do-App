@@ -6,17 +6,6 @@ const Listitem = (props) => {
     items.map((item, i) => {
       return (
         <li key={item.id}>
-          {/* <span
-            onClick={() => {
-              removeMark(i);
-            }}
-            id={item.id}
-            style={{
-              textDecoration: item.Done ? 'line-through ' : 'none',
-            }}
-          >
-            {item.desc}
-          </span> */}
           <input
             onClick={() => {
               removeMark(i);

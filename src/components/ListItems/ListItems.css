@@ -13,8 +13,7 @@ li {
 li input {
   background-color: transparent;
   border: none;
-  color: #fff;
-  font-size: 18px;
+  font-size: 16px;
 }
 li input:focus{
   outline: none;
